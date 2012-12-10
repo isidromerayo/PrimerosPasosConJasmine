@@ -1,8 +1,13 @@
+var Player = require('../src/Player');
+var Song = require('../src/Song');
+var toBePlayingMatcher = require('./toBePlayingMatcher');
+
 describe("Player", function() {
   var player;
   var song;
 
   beforeEach(function() {
+    this.addMatchers(toBePlayingMatcher);
     player = new Player();
     song = new Song();
   });
