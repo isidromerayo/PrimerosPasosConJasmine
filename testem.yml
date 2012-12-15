@@ -1,0 +1,6 @@
+framework: jasmine
+src_files:
+    - src/**/*.js
+    - spec/**/*.js
+launch_in_dev:
+    - PhantomJS
