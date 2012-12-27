@@ -34,7 +34,6 @@ SQLQueryBuilder.prototype.values = function(params) {
     for (var idx in params)
         size++;
     this.columns = [];
-    this.valores = [];
     for(var idx in params) {
         this.columns.push({
           col: idx,
